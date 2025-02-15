@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العناصر الهيكلية الأساسية</title>
+    <style>
+       h1{border:solid 10px;
+        background-color: aqua;
+        color: rgb(2, 14, 14);
+        border-top: ;
+        text-align: center;
+
+       }
+       
+       
+       body {
+            direction: rtl;
+            text-align: right;
+            
+        }
+        code {
+            background-color: #181616;
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #c7254e;
+            background-color: #f9f2f4;
+        }
+        pre {
+            background-color: #adaaaa;
+            padding: 1em;
+            border-radius: 4px;
+            overflow-x: auto;
+            text-align: center;
+        }
+        .nav-button {
+            background-color: deepskyblue; /* اللون الجميل بشكل دائم */
+            color: black; /* اللون الأسود */
+            padding: 10px 20px;
+            margin: 20px; /* زيادة التباعد بين الأزرار */
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            box-shadow: 0 0 15px deepskyblue; /* تأثير الإضاءة */
+        }
+        .nav-button:hover {
+            background-color: deepskyblue; /* نفس اللون عند التمرير */
+            box-shadow: 0 0 20px deepskyblue; /* زيادة تأثير الإضاءة عند التمرير */
+        }
+    </style>
+</head>
+<body>
+    <h1 class="عنوان">العناصر الهيكلية الأساسية في HTML</h1>
+    <a class="nav-button" href="الصفحةالرئيسيه.html">الصفحةالرئيسيه</a>
+    <a class="nav-button" href="العناوين.html">العناوين</a>
+    <h2>&lt;html&gt;</h2>
+    <p>العنصر الجذري الذي يحتوي على جميع عناصر HTML الأخرى. يُستخدم لتحديد اللغة الافتراضية للصفحة.</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="ar"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;مثال&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;مرحبًا بالعالم!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+    
+    <h2>&lt;head&gt;</h2>
+    <p>يحتوي على بيانات التعريف (metadata) مثل العنوان، الميتا داتا، الروابط الخارجية، وأي مراجع أخرى تحدد إعدادات أو موارد الصفحة.</p>
+    <pre><code>&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;عنوان الصفحة&lt;/title&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;script src="script.js" defer&gt;&lt;/script&gt;
+&lt;/head&gt;</code></pre>
+    
+    <h2>&lt;body&gt;</h2>
+    <p>يحتوي على كل المحتوى المرئي على الصفحة مثل النصوص، الصور، الروابط، الأزرار، الجداول، إلخ.</p>
+    <pre><code>&lt;body&gt;
+  &lt;h1&gt;مرحبًا بكم في موقعي&lt;/h1&gt;
+  &lt;p&gt;هذا نص داخل جسم الصفحة.&lt;/p&gt;
+  &lt;img src="image.jpg" alt="وصف الصورة"&gt;
+&lt;/body&gt;</code></pre>
+
+    <h2>العناصر الهيكلية التفصيلية</h2>
+
+    <h3>&lt;!DOCTYPE html&gt;</h3>
+    <p>يحدد نوع وثيقة HTML. يضمن أن يعرض المتصفح الصفحة بشكل صحيح ومتناسق.</p>
+    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;!-- هنا يبدأ المستند --&gt;
+&lt;/html&gt;</code></pre>
+
+    <h3>&lt;title&gt;</h3>
+    <p>يُستخدم لعرض عنوان القصير الذي يظهر في شريط العنوان في المتصفح.</p>
+    <pre><code>&lt;head&gt;
+  &lt;title&gt;عنوان الصفحة&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+
+    <h3>&lt;meta&gt;</h3>
+    <p>يوفر معلومات وصفية عن الصفحة مثل الوصف، الكلمات المفتاحية، وترميز الأحرف.</p>
+    <pre><code>&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta name="description" content="مثال عن استخدام عناصر الميتا في HTML."&gt;
+  &lt;meta name="keywords" content="HTML, CSS, برمجة"&gt;
+&lt;/head&gt;</code></pre>
+
+    <h3>&lt;link rel="stylesheet" href="styles.css"&gt;</h3>
+    <p>يربط الصفحة بملف CSS خارجي لتنسيق الصفحة.</p>
+    <pre><code>&lt;head&gt;
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;</code></pre>
+
+    <h3>&lt;script src="script.js" defer&gt;&lt;/script&gt;</h3>
+    <p>يربط الصفحة بملف JavaScript خارجي ليضيف التفاعلية إلى الصفحة.</p>
+    <pre><code>&lt;head&gt;
+  &lt;script src="script.js" defer&gt;&lt;/script&gt;
+&lt;/head&gt;</code></pre>
+
+    <h3>&lt;h1&gt; إلى &lt;h6&gt;</h3>
+    <p>تُستخدم لتحديد العناوين من H1 إلى H6، مع H1 تكون العنوان الرئيسي والأكبر.</p>
+    <pre><code>&lt;body&gt;
+  &lt;h1&gt;عنوان رئيسي&lt;/h1&gt;
+  &lt;h2&gt;عنوان فرعي&lt;/h2&gt;
+  &lt;h3&gt;عنوان أصغر&lt;/h3&gt;
+&lt;/body&gt;</code></pre>
+
+    <h3>&lt;p&gt;</h3>
+    <p>عنصر الفقرة لتضمين نصوص في الصفحة.</p>
+    <pre><code>&lt;body&gt;
+  &lt;p&gt;هذه فقرة نصية.&lt;/p&gt;
+&lt;/body&gt;</code></pre>
+
+    <h3>&lt;img src="image.jpg" alt="وصف الصورة"&gt;</h3>
+    <p>عنصر الصورة لتضمين الصور في الصفحة.</p>
+    <pre><code>&lt;body&gt;
+  &lt;img src="image.jpg" alt="وصف الصورة"&gt;
+&lt;/body&gt;</code></pre>
+
+    <h3>&lt;a href="https://example.com"&gt; رابط (Link) عناصر إضافة&lt;/a&gt;</h3>
